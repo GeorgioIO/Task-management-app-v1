@@ -20,7 +20,7 @@ export default function Project({
   const dialog = useRef();
 
   return (
-    <section className="w-[600px] flex flex-col gap-5">
+    <section className="w-full flex flex-col gap-5 xl:w-[600px]">
       <header className="flex justify-between w-full ">
         <h2 className="text-3xl text-black font-bold">
           {selectedProject.title}
@@ -59,7 +59,7 @@ export default function Project({
         </button>
       </div>
       {selectedProject.tasks.length > 0 ? (
-        <ol className="w-full bg-slate-100 pt-5 pb-5 pl-6 pr-6 flex flex-col gap-4">
+        <ol className="w-full bg-slate-100 pt-5 pb-5 pl-6 pr-6 flex flex-col gap-6">
           {selectedProject.tasks.map((task) => (
             <Task key={task.id} task={task} onClear={clearTask} />
           ))}

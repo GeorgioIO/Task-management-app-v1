@@ -13,7 +13,7 @@ export default function ContentPanel({
   onClearingTask,
 }) {
   return (
-    <section>
+    <section className="w-full pl-5 pr-5 pb-5">
       {currentSelectedProject === null && (
         <EmptyPanel onSelectProject={onSelectProject} />
       )}

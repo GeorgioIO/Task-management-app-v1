@@ -7,8 +7,8 @@ export default function Sidebar({
   onAddProject,
 }) {
   return (
-    <aside className="h-full flex flex-col gap-8 items-start shadow-black bg-black rounded-tr-xl rounded-br-xl pt-20 pb-20 pl-8 pr-8">
-      <h2 className="w-full text-left uppercase text-orange-600 text-3xl font-semibold">
+    <aside className="h-full flex flex-col gap-8 items-center justify-center shadow-black bg-black  pt-20 pb-20 pl-8 pr-8 lg:justify-start lg:items-start lg:rounded-tr-xl lg:rounded-br-xl">
+      <h2 className="w-full text-center uppercase text-orange-600 text-3xl font-semibold lg:text-left">
         Your Projects
       </h2>
       <AddProjectButton
@@ -18,7 +18,7 @@ export default function Sidebar({
         <Plus className="w-5 h-5 " strokeWidth={3} />
         Add Project
       </AddProjectButton>
-      <menu className="flex flex-col gap-3 w-full">
+      <menu className="flex flex-col  gap-3 w-full">
         {currentProjects.map((project) => (
           <button
             key={project.id}

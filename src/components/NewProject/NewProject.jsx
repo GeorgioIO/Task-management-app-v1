@@ -10,7 +10,7 @@ export default function NewProject({ saveProject, cancelProject }) {
   const dialog = useRef();
 
   return (
-    <form action="" className="flex flex-col w-[600px]  gap-4">
+    <form action="" className="flex flex-col w-full  gap-4 xl:w-[600px]">
       <ErrorModal ref={dialog} />
       <div className="flex justify-end items-center h-[55px] gap-5">
         <button type="button" className="font-medium" onClick={cancelProject}>
